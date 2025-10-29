@@ -6,7 +6,7 @@ setup(
     version="0.1.0",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
-    python_requires=">=3.12",
+    python_requires=">=3.11",
     install_requires=[
         "matplotlib>=3.8.0",
         "platformdirs>=4.0.0",
