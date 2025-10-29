@@ -1,4 +1,101 @@
-# GameOfLife
+# Game of Life - Gamified Task Manager
+
+A task management application that turns your daily tasks into a game, helping you stay motivated and productive by earning XP, leveling up, and achieving milestones.
+
+## Features
+
+- Task management with priorities and deadlines
+- XP-based progression system
+- Achievement tracking
+- Daily streaks
+- Visual reports and statistics
+- Local profile support
+- Intuitive GUI built with tkinter/ttkbootstrap
+
+## Requirements
+
+- Python 3.12 or higher
+- Required packages:
+  - matplotlib
+  - platformdirs
+- Optional packages:
+  - ttkbootstrap (recommended for better UI)
+  - Pillow (for custom icons)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/GameOfLife.git
+   cd GameOfLife
+   ```
+
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install the package with all optional dependencies:
+   ```bash
+   pip install -e ".[gui,dev]"
+   ```
+
+## Usage
+
+Run the application:
+
+```bash
+gamelife
+```
+
+Or:
+
+```bash
+python -m gamelife
+```
+
+## Development
+
+1. Install development dependencies:
+   ```bash
+   pip install -e ".[dev]"
+   ```
+
+2. Run tests:
+   ```bash
+   pytest tests/
+   ```
+
+3. Format code:
+   ```bash
+   black src/ tests/
+   isort src/ tests/
+   ```
+
+4. Run linting:
+   ```bash
+   pylint src/ tests/
+   ```
+
+## Project Structure
+
+```
+GameOfLife/
+├── src/
+│   └── gamelife/
+│       ├── core/          # Core game mechanics
+│       ├── data/          # Database and data models
+│       └── gui/           # GUI implementation
+├── tests/                 # Test suite
+├── setup.py              # Package configuration
+├── requirements.txt      # Dependencies
+└── README.md            # This file
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 Gamifying task management! Project for CS122
 
 Game of Life is a gamified task management application that transforms boring chores into exciting quests. Complete tasks to earn XP, level up, unlock achievements, and earn screen time rewards. Miss deadlines? Face XP penalties. It's time to make productivity fun!
